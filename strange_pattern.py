@@ -6,10 +6,8 @@ def strange_pattern(shape):
     
     for i in range(n):
         for j in range(m):
-            if (i % 3 == 0 or i % 3 == 2) and (j % 3 == 0 or j % 3 == 2):
+            if (i % 6 < 3 and j % 6 < 3) or (i % 6 >= 3 and j % 6 >= 3):
                 pattern[i, j] = True
-            else:
-                pattern[i, j] = False
     
     return pattern
 if __name__ == "__main__":
