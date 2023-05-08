@@ -2,8 +2,7 @@ import numpy as np
 
 # implement the function strange pattern
 
-def strange_pattern():
-    n, m = shape
+def strange_pattern(n,m):
     pattern = np.zeros((n, m), dtype=bool)
     
     for i in range(n):
