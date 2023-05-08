@@ -6,9 +6,9 @@ def strange_pattern(pattern):
 
     for i in range(n):
         for j in range(m):
-            if (i + j) % 2 == 0:
+            if (i + j) % 3 == 0:
                 win[i, j] = True
-    
+
     return win
 if __name__ == "__main__":
     pattern = (10, 10)
