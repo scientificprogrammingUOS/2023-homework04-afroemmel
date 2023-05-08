@@ -2,6 +2,8 @@ import numpy as np
 
 # implement the function strange pattern
 
+import numpy as np
+
 def strange_pattern(shape):
     n, m = shape
     pattern = np.zeros((n, m), dtype=bool)
@@ -12,7 +14,6 @@ def strange_pattern(shape):
                 pattern[i, j] = True
     
     return pattern
-
 
 if __name__ == "__main__":
     # use this for your own testing!
