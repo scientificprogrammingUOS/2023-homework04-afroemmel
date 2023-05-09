@@ -6,7 +6,6 @@ def strange_pattern(pattern):
         for j in range(pattern[1]):
             if (i + j) % 3 == 0:
                 win[i, j] = True
-
     return win
 if __name__ == "__main__":
     pattern = (10, 10)
