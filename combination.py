@@ -4,7 +4,8 @@ import numpy as np
 
 def combination(arr1, arr2, axis=0):
     arr1, arr2 = np.squeeze(arr1), np.squeeze(arr2)
-    if arr1.shape[:axis] != arr2.shape[:axis] or arr1.shape[axis + 1:] != arr2.shape[axis + 1:]:
+    #if arr1.shape[:axis] != arr2.shape[:axis] or arr1.shape[axis + 1:] != arr2.shape[axis + 1:]:
+    if arr1.shape != arr2.shape:
         raise ValueError("meaningful error")
     return np.concatenate((arr1, arr2), axis=axis)
 
