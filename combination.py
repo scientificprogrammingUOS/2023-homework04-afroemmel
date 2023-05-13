@@ -13,5 +13,6 @@ if __name__ == "__main__":
     arr2 = np.array([["z","z","z"], ["a","a","a"]])
     combined0 = combination(arr1, arr2, axis=0)
     combined1 = combination(arr1, arr2, axis=1)
+    k = "k"
     pass
 
